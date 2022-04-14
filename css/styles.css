@@ -183,6 +183,16 @@ padding-bottom: 200px;
 }
 
 /* -----------------content------------------ */
+.content-list {
+  padding-top: 94px;
+  padding-bottom: 93px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-item {
+  flex-direction: column;
+  max-width: 270px;
+}
 .content-title {
   font-weight: 700;
 font-size: 14px;
@@ -209,6 +219,13 @@ letter-spacing: 0.03em;
 color: var(--color-title);
 }
 
+.product-title {
+  padding-bottom: 50px;
+}
+
+.product-list {
+  padding-bottom: 94px;
+}
 /* ------------------team---------------------- */
 .team {
   background: var(--color-team);
