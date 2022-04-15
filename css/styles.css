@@ -85,11 +85,17 @@ color: var(--color-accent);
   margin: -1px;
 }
 
- /* ----------- шапка ----------------- */
+ /* ----------- header ----------------- */
 .header {
   background: var(--color-accent);
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ECECEC;
+}
+
+.header .conteiner {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -100,6 +106,7 @@ font-size: 26px;
 line-height: 1.9;
 letter-spacing: 0.03em;
 color: var(--color-btn-link);
+margin-left: 215px;
 }
 
 .header-logo {
@@ -110,12 +117,17 @@ color: var(--color-btn-link);
   color: var(--color-accent);
 }
 
+.header-list {
+  display: flex;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1,14;
   letter-spacing: 0.02em;
   color: var(--color-title);
+display: block;
 }
 
 .header-link:focus,
@@ -132,6 +144,8 @@ color: var(--color-btn-link);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: block;
+  margin-right: 215px;
 }
 .header-email {
   font-weight: 500;
@@ -139,6 +153,7 @@ color: var(--color-btn-link);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: block;
 }
 
 .header-tel:focus,
@@ -188,12 +203,17 @@ padding-bottom: 200px;
   padding-top: 94px;
   padding-bottom: 93px;
   display: flex;
-  justify-content: space-between;
 }
+
 .content-item {
   flex-direction: column;
   max-width: 270px;
 }
+
+.content-item:not(:last-child){
+  margin-right: 30px;
+}
+
 .content-title {
   font-weight: 700;
 font-size: 14px;
@@ -229,14 +249,10 @@ color: var(--color-title);
   padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -50px;
 }
 
-.product-item {
-  margin-left: 30px;
-  margin-top: 50px;
-  flex-basis: cals((100%-90px)/3);
+.product-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ------------------team---------------------- */
@@ -253,14 +269,15 @@ color: var(--color-title);
   padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -50px;
 }
 
 .team-item {
-  margin-left: 30px;
-  margin-top: 50px;
-  flex-basis: cals((100%-120px)/4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
@@ -288,10 +305,17 @@ padding-bottom: 30px;
 .footer {
   background: var(--color-footer);
   }
-  
+
+  .f-logo {
+  display: block;
+  padding-top: 60px;
+  }
+
 .address {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 57px;
 }
 .footer-text {
   font-weight: 400;
@@ -299,6 +323,8 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--color-accent);
+display: block;
+padding-bottom: 9px;
 }
 
 .footer-text:hover,
@@ -312,6 +338,8 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+display: block;
+padding-bottom: 6px;
 }
 .footer-tel {
   font-weight: 400;
@@ -319,6 +347,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+display: block;
 }
 
 .footer-email:focus,
