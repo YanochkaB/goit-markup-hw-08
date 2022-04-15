@@ -163,6 +163,7 @@ padding-bottom: 200px;
   color: var(--color-accent);
   max-width: 700px;
   margin: 0% auto;
+  padding-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -200,6 +201,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-title);
+padding-bottom: 11px;
 }
 
 .content-text {
@@ -225,10 +227,40 @@ color: var(--color-title);
 
 .product-list {
   padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
 }
+
+.product-item {
+  margin-left: 30px;
+  margin-top: 50px;
+  flex-basis: cals((100%-90px)/3);
+}
+
 /* ------------------team---------------------- */
 .team {
   background: var(--color-team);
+}
+
+.team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.team-list {
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.team-item {
+  margin-left: 30px;
+  margin-top: 50px;
+  flex-basis: cals((100%-120px)/4);
 }
 
 .team-name {
@@ -238,6 +270,8 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-title);
+padding-top: 30px;
+padding-bottom: 10px;
 }
 
 .team-position {
@@ -246,6 +280,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
+padding-bottom: 30px;
 }
 
 /* ----------------------footer------------------ */
@@ -254,6 +289,10 @@ letter-spacing: 0.03em;
   background: var(--color-footer);
   }
   
+.address {
+  display: flex;
+  flex-direction: column;
+}
 .footer-text {
   font-weight: 400;
 font-size: 14px;
