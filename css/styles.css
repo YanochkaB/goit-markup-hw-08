@@ -5,6 +5,8 @@
   --color-header-logo: #000000;
   --color-team: #F5F4FA;
   --color-footer: #2F303A;
+
+  --indent-cards: 30px;
 }
 
 
@@ -187,7 +189,7 @@ padding-bottom: 200px;
   color: var(--color-accent);
   max-width: 700px;
   margin: 0% auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -221,7 +223,7 @@ padding-bottom: 200px;
 }
 
 .content-item:not(:last-child){
-  margin-right: 30px;
+  margin-right: var(--indent-cards);
 }
 
 .content-title {
@@ -231,7 +233,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-title);
-padding-bottom: 11px;
+margin-bottom: 10px;
 }
 
 .content-text {
@@ -252,7 +254,7 @@ color: var(--color-title);
 }
 
 .product-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .product-list {
@@ -262,7 +264,7 @@ color: var(--color-title);
 }
 
 .product-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--indent-cards);
 }
 
 /* ------------------team---------------------- */
@@ -272,7 +274,7 @@ color: var(--color-title);
 
 .team-title {
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -287,9 +289,12 @@ color: var(--color-title);
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--indent-cards);
 }
 
+.team-foto {
+  margin-bottom: var(--indent-cards);
+}
 .team-name {
   font-weight: 500;
 font-size: 16px;
@@ -297,8 +302,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-title);
-padding-top: 30px;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .team-position {
@@ -307,7 +311,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom: 30px;
+margin-bottom: 30px;
 }
 
 /* ----------------------footer------------------ */
@@ -333,7 +337,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--color-accent);
-padding-bottom: 9px;
+margin-bottom: 9px;
 }
 
 .footer-text:hover,
@@ -347,7 +351,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-padding-bottom: 6px;
+margin-bottom: 9px;
 }
 
 .footer-tel {
