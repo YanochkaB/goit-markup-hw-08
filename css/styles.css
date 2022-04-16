@@ -106,7 +106,7 @@ font-size: 26px;
 line-height: 1.9;
 letter-spacing: 0.03em;
 color: var(--color-btn-link);
-margin-left: 215px;
+
 }
 
 .header-logo {
@@ -119,6 +119,11 @@ margin-left: 215px;
 
 .header-list {
   display: flex;
+  padding-left: 93px;
+}
+
+.header-item:not(:last-child) {
+margin-right: 50px;
 }
 
 .header-link {
@@ -138,28 +143,31 @@ display: block;
 .current {
   color: var(--color-btn-link);
 }
+
+.header-connect {
+  margin-left: auto;
+}
 .header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  display: block;
-  margin-right: 215px;
 }
+
 .header-email {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  display: block;
+  margin-right: 50px;
 }
 
 .header-tel:focus,
 .header-tel:hover,
 .header-email:focus,
-.header-email:hover{
+.header-email:hover {
 color: var(--color-btn-link);
   }
   /* ----------- hero  ----------------- */
@@ -168,6 +176,7 @@ background: #2F303A;
 padding-top: 200px;
 padding-bottom: 200px;
 }
+
   .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -180,6 +189,7 @@ padding-bottom: 200px;
   margin: 0% auto;
   padding-bottom: 30px;
 }
+
 .hero-btn {
   font-family: inherit;
   font-weight: 700;
@@ -323,7 +333,6 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--color-accent);
-display: block;
 padding-bottom: 9px;
 }
 
@@ -338,16 +347,15 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-display: block;
 padding-bottom: 6px;
 }
+
 .footer-tel {
   font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-display: block;
 }
 
 .footer-email:focus,
@@ -356,7 +364,13 @@ display: block;
 .footer-tel:hover {
   color: var(--color-btn-link);
 }
+
 /* -----------------portfolio------------------ */
+.menu {
+    padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .menu-btn-text {
   font-family: inherit;
 font-style: normal;
@@ -367,7 +381,9 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-title);
 background: var(--color-team);
-cursor: pointer;
+border: none;
+border-radius: 4px;
+padding: 6px 22px;
 }
 
 .menu-btn-text:focus,
@@ -387,6 +403,16 @@ color: var(--color-title);
 
 .menu > button:active {
 color: var(--color-btn-link);
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.menu-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .project-text {
