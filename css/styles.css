@@ -299,9 +299,6 @@ color: var(--color-title);
   margin-right: var(--indent-cards);
 }
 
-.team-foto {
-  /* margin-bottom: var(--indent-cards); */
-}
 .team-desc {
   padding-top: var(--indent-cards);
   padding-bottom: var(--indent-cards);
