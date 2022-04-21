@@ -158,6 +158,11 @@ padding-bottom: 32px;
   color: #757575;
 }
 
+.header-tel-icon {
+  width: 10px;
+  height: 16px;
+}
+
 .header-email {
   font-weight: 500;
   font-size: 14px;
@@ -167,12 +172,19 @@ padding-bottom: 32px;
   margin-right: 50px;
 }
 
+.header-email-icon {
+  width: 16px;
+  height: 12px;
+}
+
 .header-tel:focus,
 .header-tel:hover,
 .header-email:focus,
 .header-email:hover {
 color: var(--color-btn-link);
+fill: var(--color-btn-link);
   }
+
   /* ----------- hero  ----------------- */
 .hero {
 background: #2F303A;
