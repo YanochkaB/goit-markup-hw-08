@@ -91,7 +91,7 @@ color: var(--color-accent);
  /* ----------- header ----------------- */
 .header {
   background: var(--color-accent);
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header .conteiner {
@@ -104,7 +104,7 @@ font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
-line-height: 1.9;
+line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--color-btn-link);
 
@@ -149,6 +149,7 @@ padding-bottom: 32px;
 
 .header-connect {
   margin-left: auto;
+  display: flex;
 }
 .header-tel {
   font-weight: 500;
@@ -161,6 +162,7 @@ padding-bottom: 32px;
 .header-tel-icon {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .header-email {
@@ -175,6 +177,7 @@ padding-bottom: 32px;
 .header-email-icon {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
 }
 
 .header-tel:focus,
@@ -190,6 +193,11 @@ fill: var(--color-btn-link);
 background: #2F303A;
 padding-top: 200px;
 padding-bottom: 200px;
+background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)), 
+url(../images/hero.jpg);
+background-position: center;
+background-repeat: no-repeat;
 }
 
   .hero-title {
@@ -249,7 +257,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-title);
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .content-text {
@@ -437,7 +445,7 @@ color: var(--color-btn-link);
 }
 
 .menu-list-item:not(:last-child) {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .projects {
