@@ -493,11 +493,12 @@ color: rgba(255, 255, 255, 0.6);
 .f-join-title {
   font-weight: 700;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-accent);
 margin-bottom: 20px;
+text-align: left;
 }
 
 .f-join-list {
