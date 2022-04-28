@@ -605,6 +605,28 @@ color: var(--color-btn-link);
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project-thumb {
+position: relative;
+}
+
+.project-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 64px 23px;
+  
+  color: var(--color-accent);
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.project-preview-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+}
+
 .project-desc {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
