@@ -756,15 +756,58 @@ color: var(--color-title);
 margin-bottom: 12px;
 }
 
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.user {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
-margin-bottom: 10px;
-padding-left: 12px;
+padding-left: 42px;
+padding-right: 12px;
+
+outline: none;
 }
+
+.modal-input:focus {
+  border-color: var(--color-btn-link);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--color-btn-link);
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-text {
+width: 100%;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 16px;
+resize: none;
+}
+
+/* .modal-text:focus {
+  border-color: var(--color-btn-link);
+} */
 
 .modal-btn-send {
 width: 200px;
