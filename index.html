@@ -388,7 +388,8 @@
     <!--підвал, контакти-->
     <footer class="footer">
       <div class="conteiner">
-        <div class="cont-footer">
+        <div class="footer-wrap">
+          <div class="cont-footer">
           <div class="footer-adres">
             <a href="./index.html" class="logo link f-logo"
               >Web<span class="footer-logo">Studio</span></a
@@ -442,27 +443,30 @@
           </div>
         </div>
 
+        <div class="send">
         <form>
-          <div class="send">
-            <p class="send-title">Подпишитесь на рассылку</p>            
-            <div class="send-wrap">
-            <label>
-              <input 
-              type="email" 
-              class="send-user" 
-              name="email"               
-              placeholder="E-mail">
-            </label>                               
-            <button type="submit" class="send-btn btn">Подписаться 
-              <svg class="send-svg" width="24" height="24">
+            <p class="send-title">Подпишитесь на рассылку</p>
+            <div class="send-field">
+              <label>
+                <input 
+                type="email" 
+                class="send-user" 
+                name="email"   
+                value="email"            
+                placeholder="E-mail">
+              </label>                               
+              <button type="submit" class="send-btn btn">Подписаться 
+                <svg class="send-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-            </div>
-          </div>
+                </svg>
+              </button>
+            </div> 
         </form>
+        </div>
+        </div>
       </div>
     </footer>
+<!-- modal -->
     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -475,7 +479,7 @@
   <div class="modal-field">
     <label for="user-name" class="user">Имя</label>
     <div class="modal-input-wrap">
-      <input 
+      <input required
       type="text" 
       class="modal-input" 
       name="name" 
@@ -489,7 +493,8 @@
   <div class="modal-field">
     <label for="user-tel" class="user">Телефон</label>
     <div class="modal-input-wrap">
-      <input type="tel" class="modal-input" name="tel" id="user-tel">
+      <input required
+      type="tel" class="modal-input" name="tel" id="user-tel">
     <svg class="input-icon" width="18" height="18">
       <use href="./images/icons.svg#icon-tel"></use>
     </svg>
@@ -499,7 +504,8 @@
   <div class="modal-field">
     <label for="user-email" class="user">Почта</label>
     <div class="modal-input-wrap">
-      <input type="email" class="modal-input" name="email" id="user-email">
+      <input required
+      type="email" class="modal-input" name="email" id="user-email">
     <svg class="input-icon" width="18" height="18">
       <use href="./images/icons.svg#icon-massege"></use>
     </svg>
@@ -524,7 +530,9 @@
     name="policy"
     value="policy"> 
     <label for="input-check" 
-      class="check-text">Соглашаюсь с рассылкой и принимаю<a class="check-text-link link">Условия договора</a>
+      class="check-text">
+      Соглашаюсь с рассылкой и принимаю&nbsp;
+      <a class="check-text-link link">Условия договора</a>
     </label>
   </div>
 
