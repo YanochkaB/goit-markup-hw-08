@@ -37,6 +37,7 @@ ol {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 img {
@@ -63,7 +64,8 @@ list-style-type: none;
 
 .hero-btn {
   background: var(--color-btn-link);
-  /* cursor: pointer; */
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 .btn {
@@ -841,6 +843,11 @@ margin-bottom: 12px;
 .user {
   display: block;
   margin-bottom: 4px;
+
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 }
 
 .modal-input-wrap {
