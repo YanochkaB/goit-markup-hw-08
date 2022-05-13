@@ -634,7 +634,7 @@ fill: var(--color-accent);
   padding-bottom: 94px;
 }
 
-.menu-btn-text {
+.menu__btn {
   font-family: inherit;
 font-style: normal;
 font-weight: 500;
@@ -653,8 +653,8 @@ background var(--time-hover) var(--cubic),
 box-shadow var(--time-hover) var(--cubic);
 }
 
-.menu-btn-text:focus,
-.menu-btn-text:hover {
+.menu__btn:focus,
+.menu__btn:hover {
   color: #FFFFFF;
   background: var(--color-btn-link);
   box-shadow: 
@@ -664,7 +664,7 @@ box-shadow var(--time-hover) var(--cubic);
 }
 
 .menu
-.project-title {
+.project__title {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -676,17 +676,17 @@ color: var(--color-title);
 color: var(--color-btn-link);
 }
 
-.menu-list {
+.menu__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.menu-list-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.projects {
+.project {
   display: flex;
   flex-wrap: wrap;
 
@@ -694,7 +694,7 @@ color: var(--color-btn-link);
   margin-top: calc(-1 * var(--indent-cards));
 }
 
-.projects > .project-list-item {
+.project > .project__item {
   flex-basis: calc(100%/3 - var(--indent-cards));
   margin-left: var(--indent-cards);
   margin-top: var(--indent-cards);
@@ -702,24 +702,24 @@ color: var(--color-btn-link);
   transition: box-shadow var(--time-hover) var(--cubic);
 }
 
-.project-list-item:hover,
-.project-list-item:focus {
+.project__item:hover,
+.project__item:focus {
   box-shadow: 
   0px 1px 1px rgba(0, 0, 0, 0.12), 
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-list-item:hover .project-preview-text {
+.project__item:hover .project__preview-text {
   transform: translateY(0%);
 }
 
-.project-wrap {
+.project__wrap {
 position: relative;
 overflow: hidden;
 }
 
-.project-preview-text {
+.project__preview-text {
 font-weight: 400;
 font-size: 18px;
 line-height: 1.55;
@@ -738,16 +738,16 @@ position: absolute;
   overflow: auto;
 }
 
-.project-desc {
+.project__desc {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
 }
 
-.project-title {
+.project__title {
 margin-bottom: 4px;
 }
 
-.project-text {
+.project__text {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
