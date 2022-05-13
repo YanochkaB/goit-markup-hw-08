@@ -14,33 +14,39 @@
 
 <body>
 <!--шапка сторінки-->
-  <header class="header">
-    <div class="conteiner">
-      <a href="./index.html" class="logo link">Web<span class="header-logo">Studio</span></a>
-      <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link link">Студия</a></li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link current">Портфолио</a></li>
-            <li class="header-item">
-              <a href="" class="header-link link">Контакты</a></li>
-          </ul>   
+    <header class="header">
+      <div class="conteiner">
+        <a href="./index.html" class="logo link"
+          >Web<span class="header-logo">Studio</span></a>
+        <nav class="navigation">
+          <ul class="cite-menu list">
+            <li class="cite-menu__item">
+              <a href="./index.html" class="cite-menu__link link ">Студия</a>
+            </li>
+            <li class="cite-menu__item">
+              <a href="./portfolio.html" class="cite-menu__link current link">Портфолио</a>
+            </li>
+            <li class="cite-menu__item">
+              <a href="" class="cite-menu__link link">Контакты</a>
+            </li>
+          </ul>
         </nav>
-          <div class="header-connect">
-            <a href="mailto:info@example.com" class="header-email link">
-              <svg width="16" height="12" class="header-email-icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              info@example.com</a> 
-            <a href="tel:+380991111111" class="header-tel link">
-              <svg width="10"  height="16" class="header-tel-icon">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 099 111 11 11</a>
-          </div> 
-    </div>
-  </header>
+        <div class="connect">
+          <a href="mailto:info@example.com" class="connect__email link">
+            <svg width="16" height="12" class="connect__icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@example.com</a
+          >
+          <a href="tel:+380991111111" class="connect__tel link">
+            <svg width="10" height="16" class="connect__icon">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 099 111 11 11</a
+          >
+        </div>
+      </div>
+    </header>
 <!--основна частина-->
 <main>
     <section class="menu">
@@ -234,49 +240,45 @@
           <div class="cont-footer">
           <div class="footer-adres">
             <a href="./index.html" class="logo link f-logo"
-              >Web<span class="footer-logo">Studio</span></a
-            >
+              >Web<span class="footer-logo">Studio</span></a>
             <address class="address">
               <a
                 href="https://goo.gl/maps/dfasVw1VLNUHf7m19"
-                class="footer-text link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-              <a href="mailto:info@example.com" class="footer-email link"
-                >info@example.com</a
-              >
-              <a href="tel:+380991111111" class="footer-tel link"
-                >+38 099 111 11 11</a
-              >
+                class="address__text link"
+                >г. Киев, пр-т Леси Украинки, 26</a>
+              <a href="mailto:info@example.com" class="address__email link"
+                >info@example.com</a>
+              <a href="tel:+380991111111" class="address__tel link"
+                >+38 099 111 11 11</a>
             </address>
           </div>
-          <div class="footer-join">
-            <h2 class="f-join-title title">Присоединяйтесь</h2>
-            <ul class="f-join-list list">
-              <li class="f-join-item item">
-                <a href="" class="f-join-link link">
-                  <svg class="f-join-svg" width="20" height="20">
+          <div class="join">
+            <h2 class="join__title title">Присоединяйтесь</h2>
+            <ul class="soc-list list">
+              <li class="soc-list__item item">
+                <a href="" class="soc-list__link link">
+                  <svg class="soc-list__svg" width="20" height="20">
                     <use href="./images/icons.svg#icon-insta"></use>
                   </svg>
                 </a>
               </li>
-              <li class="f-join-item item">
-                <a href="" class="f-join-link link">
-                  <svg class="f-join-svg" width="20" height="20">
+              <li class="soc-list__item item">
+                <a href="" class="soc-list__link link">
+                  <svg class="soc-list__svg" width="20" height="20">
                     <use href="./images/icons.svg#icon-twiter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="f-join-item item">
-                <a href="" class="f-join-link link">
-                  <svg class="f-join-svg" width="20" height="20">
+              <li class="soc-list__item item">
+                <a href="" class="soc-list__link link">
+                  <svg class="soc-list__svg" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="f-join-item item">
-                <a href="" class="f-join-link link">
-                  <svg class="f-join-svg" width="20" height="20">
+              <li class="soc-list__item item">
+                <a href="" class="soc-list__link link">
+                  <svg class="soc-list__svg" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -287,17 +289,17 @@
 
         <div class="send">
         <form>
-            <p class="send-title">Подпишитесь на рассылку</p>
-            <div class="send-field">
+            <p class="send__title">Подпишитесь на рассылку</p>
+            <div class="send__field">
               <label>
                 <input 
                 type="email" 
-                class="send-user" 
-                name="email"               
+                class="send__user" 
+                name="email"           
                 placeholder="E-mail">
               </label>                               
-              <button type="submit" class="send-btn btn">Подписаться 
-                <svg class="send-svg" width="24" height="24">
+              <button type="submit" class="send__btn btn">Подписаться 
+                <svg class="send__svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
