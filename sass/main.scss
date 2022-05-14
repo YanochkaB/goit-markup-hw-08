@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './base/reset';
+@import './base/common';
+
+@import './components/header';
+@import './components/logo';
+
+@import './components/conteiner';
+@import './components/studio/page-header';
+@import './components/studio/content';
+@import './components/studio/product';
+@import './components/studio/team';
+@import './components/studio/customers';
+
+@import './components/footer';
+
+@import './components/portfolio/menu';
+@import './components/portfolio/project';
+
+@import './components/modal';

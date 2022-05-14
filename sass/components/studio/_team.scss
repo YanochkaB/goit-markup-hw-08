@@ -1,0 +1,76 @@
+.team {
+  background: var(--color-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__title {
+  margin-bottom: 50px;
+}
+
+.person-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-card__item {
+  background: var(--color-accent);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+}
+
+.person-card__item:not(:last-child) {
+  margin-right: var(--indent-cards);
+}
+
+.person-card__desc {
+  padding-top: var(--indent-cards);
+  padding-bottom: var(--indent-cards);
+}
+
+.person-card__name {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-title);
+margin-bottom: 10px;
+}
+
+.person-card__position {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social__item:not(:last-child) {
+margin-right: 10px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  border-radius: 50%;
+  transition: background-color 250ms var(--cubic), 
+  fill 250ms var(--cubic);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--color-btn-link);
+  fill: var(--color-accent);
+}

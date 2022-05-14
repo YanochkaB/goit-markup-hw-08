@@ -1,0 +1,19 @@
+:root {
+  --color-title: #212121;
+  --color-btn-link: #2196F3;
+  --color-accent: #FFFFFF;
+  --color-header-logo: #000000;
+  --color-team: #F5F4FA;
+  --color-footer: #2F303A;
+
+  --indent-cards: 30px;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-hover: 250ms;
+}
+
+body {
+font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+font-style: normal;
+color: #757575;
+}

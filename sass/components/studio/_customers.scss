@@ -1,0 +1,39 @@
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers__title {
+  margin-bottom: 50px;
+}
+
+.company {
+  display: flex;
+justify-content: center;
+}
+
+.company__item:not(:last-child) {
+margin-right: 30px;
+}
+
+.company__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  object-fit: contain;
+  transition: fill var(--time-hover) var(--cubic),
+  border 250ms var(--cubic);
+}
+
+.company__link:hover,
+.company__link:focus,
+.company__link:active {
+  fill: var(--color-btn-link);
+  border: 1px solid var(--color-btn-link);
+}
