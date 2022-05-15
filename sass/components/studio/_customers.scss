@@ -9,7 +9,7 @@
 
 .company {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .company__item:not(:last-child) {
@@ -29,11 +29,10 @@ margin-right: 30px;
   object-fit: contain;
   transition: fill var(--time-hover) var(--cubic),
   border 250ms var(--cubic);
-}
-
-.company__link:hover,
-.company__link:focus,
-.company__link:active {
-  fill: var(--color-btn-link);
-  border: 1px solid var(--color-btn-link);
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--color-btn-link);
+    border: 1px solid var(--color-btn-link);
+  }
 }
