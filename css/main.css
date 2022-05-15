@@ -184,15 +184,15 @@ img {
   color: var(--color-btn-link);
 }
 
-.header-logo {
+.header__logo {
   color: var(--color-header-logo);
 }
 
-.footer-logo {
+.footer__logo {
   color: var(--color-accent);
 }
 
-.f-logo {
+.footer__logo-block {
   display: block;
 }
 
@@ -380,6 +380,9 @@ img {
 .social {
   display: flex;
   justify-content: center;
+}
+
+.person-card__social {
   margin-top: 16px;
 }
 
@@ -501,7 +504,7 @@ img {
   color: var(--color-btn-link);
 }
 
-.join {
+.adress__join {
   margin-left: 70px;
 }
 
@@ -543,7 +546,7 @@ img {
   background-color: var(--color-btn-link);
 }
 
-.send {
+.adress__send {
   margin-left: 93px;
 }
 
