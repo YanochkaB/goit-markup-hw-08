@@ -220,10 +220,6 @@ img {
 
 .hero__btn {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--color-accent);
   margin: 0% auto;
   width: 200px;
@@ -266,9 +262,9 @@ img {
 }
 
 .content__title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
@@ -276,7 +272,6 @@ img {
 }
 
 .content__text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -359,7 +354,6 @@ img {
 }
 
 .person-card__position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -453,7 +447,6 @@ img {
 }
 
 .address__text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -471,7 +464,6 @@ img {
 
 .address__tel,
 .address__email {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -551,7 +543,6 @@ img {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -590,9 +581,9 @@ img {
   padding-bottom: 94px;
 }
 .menu .project__title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--color-title);
 }
@@ -600,11 +591,11 @@ img {
 .menu__btn {
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  font-weight: 500;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--color-title);
   background: var(--color-team);
   border: none;
@@ -658,7 +649,6 @@ img {
 }
 
 .project__preview-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -688,7 +678,6 @@ img {
 }
 
 .project__text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -763,7 +752,6 @@ img {
 .form__user {
   display: block;
   margin-bottom: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -812,7 +800,6 @@ img {
 }
 
 .form__check-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -833,13 +820,6 @@ img {
   margin-right: 8px;
   transition: border var(--time-hover) var(--cubic);
 }
-
-.form__check-text > a {
-  text-decoration-line: underline;
-  color: var(--color-btn-link);
-  transition: color var(--time-hover) var(--cubic);
-}
-
 .form__check:checked + .form__check-text::before {
   background-color: var(--color-btn-link);
   border: none;
@@ -847,10 +827,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.form__check:hover + .form__check-text::before,
-.form__check:focus + .form__check-text::before {
+.form__check:hover + .form__check-text::before, .form__check:focus + .form__check-text::before {
   border: 2px solid var(--color-btn-link);
+}
+
+.form__check-text > a {
+  text-decoration-line: underline;
+  color: var(--color-btn-link);
+  transition: color var(--time-hover) var(--cubic);
 }
 
 .btn-send {

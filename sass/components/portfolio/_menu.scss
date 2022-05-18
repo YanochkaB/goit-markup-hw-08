@@ -2,10 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
   .project__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(18px, 2, 700, 0.06em);
     color: var(--color-title);
   }
 }
@@ -13,11 +10,8 @@
 .menu__btn {
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(16px, 1.62, 500, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   background: var(--color-team);
   border: none;
