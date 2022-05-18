@@ -8,8 +8,7 @@
 }
 
 .company {
-  display: flex;
-  justify-content: center;
+  @include flex($df:flex, $jc:center, $ai:null);
 }
 
 .company__item:not(:last-child) {
@@ -19,9 +18,7 @@ margin-right: 30px;
 .company__link {
   width: 170px;
   height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;

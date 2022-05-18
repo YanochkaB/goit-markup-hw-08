@@ -32,12 +32,11 @@
 }
 
 .menu > button:active {
-color: var(--color-btn-link);
+  color: var(--color-btn-link);
 }
 
 .menu__list {
-  display: flex;
-  justify-content: center;
+  @include flex($df:flex, $jc:center, $ai:null);
   margin-bottom: 50px;
 }
 

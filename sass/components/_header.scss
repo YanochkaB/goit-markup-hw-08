@@ -32,10 +32,7 @@
 }
 
 .cite-menu__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 500, 0.02em);
   color: var(--color-title);
   display: block;
   padding-top: 32px;
@@ -62,13 +59,9 @@
 
 .connect__tel,
 .connect__email {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 500, 0.02em);
   color: #757575;
-  display: flex;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   transition: color var(--time-hover) var(--cubic),
   fill 250ms var(--cubic);
   &:focus,

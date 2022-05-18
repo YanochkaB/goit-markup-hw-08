@@ -23,9 +23,7 @@
 }
 
 .address__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, null, 0.03em);
   color: var(--color-accent);
   margin-bottom: 9px;
   transition: color var(--time-hover) var(--cubic);
@@ -41,9 +39,7 @@
 
 .address__tel,
 .address__email {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.7, null, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--time-hover) var(--cubic);
   &:focus,
@@ -57,10 +53,7 @@
 }
 
 .join__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 20px;
@@ -68,8 +61,7 @@
 }
 
 .soc-list {
-  display: flex;
-  justify-content: center;
+@include flex($df:flex, $jc:center, $ai:null);
 }
 
 .soc-list__item:not(:last-child) {
@@ -80,9 +72,7 @@
   padding: 0;
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   fill: var(--color-accent);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -98,18 +88,14 @@
 }
 
 .send__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 20px;
 }
 
 .send__field {
-  display: flex;
-  justify-content: flex-start;
+@include flex($df:flex, $jc:flex-start, $ai:null);
 }
 
 .send__user {
@@ -120,15 +106,10 @@
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.25, null, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   &::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.25, null, 0.03em);
   color: rgba(255, 255, 255, 0.6);
 }
 }
@@ -142,14 +123,6 @@
   background: var(--color-btn-link);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-accent);
   fill: var(--color-accent);
 }

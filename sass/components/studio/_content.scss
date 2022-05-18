@@ -16,9 +16,7 @@
 }
 
 .content__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   height: 120px;
   background: var(--color-team);
   border-radius: 4px;

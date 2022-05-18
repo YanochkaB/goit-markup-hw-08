@@ -30,25 +30,19 @@
 }
 
 .person-card__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 1.18, 500, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 10px;
 }
 
 .person-card__position {
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 1.18, null, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
+@include flex($df:flex, $jc:center, $ai:null);
 }
 
 .person-card__social {
@@ -62,9 +56,7 @@
 .social__link {
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   fill: #AFB1B8;
   border-radius: 50%;
   transition: background-color 250ms var(--cubic), 
