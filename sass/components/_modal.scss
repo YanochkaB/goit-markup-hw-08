@@ -38,9 +38,7 @@
   background: var(--color-accent);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($df:flex, $jc:center, $ai:center);
   &:focus, 
   &:hover {
     fill: var(--color-btn-link);
@@ -54,11 +52,8 @@
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font (20px, 1.15, 700, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 12px;
 }
@@ -70,9 +65,7 @@
 .form__user {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.16, null, 0.01em);
 }
 
 .form__input-wrap {
@@ -118,6 +111,7 @@
 }
 
 .form__check-text {
+  @include font(14px, 1.71, null, 0.03em);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

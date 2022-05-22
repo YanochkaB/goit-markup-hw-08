@@ -1,6 +1,10 @@
 .customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 
 .customers__title {
@@ -8,16 +12,33 @@
 }
 
 .company {
-  @include flex($df:flex, $jc:center, $ai:null);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  @include tablet {
+    margin-bottom: -30px;
+  }
 }
 
-.company__item:not(:last-child) {
-margin-right: 30px;
+.company__item {
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  @include tablet {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    width: calc(100% / 6 - 30px);
+  }
 }
 
 .company__link {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
+  // width: 170px;
+  // height: 92px;
   @include flex($df:flex, $jc:center, $ai:center);
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
@@ -31,5 +52,11 @@ margin-right: 30px;
   &:active {
     fill: var(--color-btn-link);
     border: 1px solid var(--color-btn-link);
+  }
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
   }
 }
