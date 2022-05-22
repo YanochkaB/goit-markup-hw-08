@@ -767,8 +767,8 @@ img {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
+  min-height: 609px;
   background: var(--color-accent);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -779,6 +779,18 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transform-origin: top center;
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .close-btn {
@@ -869,19 +881,13 @@ img {
 }
 
 .form__check-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-}
-.form__check-text:hover, .form__check-text:focus {
-  color: #188CE8;
 }
 .form__check-text::before {
   content: "";
