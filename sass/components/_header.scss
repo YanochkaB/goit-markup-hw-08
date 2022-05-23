@@ -7,6 +7,15 @@
   }
 }
 
+
+.menu-mobile {
+  width: 100%;
+  display: flex;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .cite-menu {
   display: flex;
   padding-left: 93px;
@@ -33,7 +42,6 @@
 
 .cite-menu__link {
   @include font(14px, 1.14, 500, 0.02em);
-  color: var(--color-title);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -45,8 +53,14 @@
 }
 
 .connect {
-  margin-left: auto;
-  display: flex;
+  @include tablet {
+  display: grid;
+  justify-items: start;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .connect__email {

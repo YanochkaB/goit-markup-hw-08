@@ -60,10 +60,13 @@
 }
 
 .modal__title {
-  @include font (20px, 1.15, 700, 0.03em);
+  @include font (20px, 1.5, 700, 0.03em);
   text-align: center;
   color: var(--color-title);
   margin-bottom: 12px;
+  @include desktop {
+    @include font(null, 1.15, null, null);
+  }
 }
 
 .form__field {
@@ -119,7 +122,7 @@
 }
 
 .form__check-text {
-  @include font(12px, 1.71, null, 0.03em);
+  @include font(12px, 1.16, null, 0.03em);
   @include flex($df:flex, $jc:center, $ai:center);
   margin-bottom: 30px;
   &::before {
@@ -142,13 +145,21 @@
       border: 2px solid var(--color-btn-link);
     }
   }
+  & > a {
+    text-decoration-line: underline;
+    color: var(--color-btn-link);
+    transition: color var(--time-hover) var(--cubic);
+  }
+  @include desktop {
+    @include font(14px, 1.71, null, null);
+  }
 }
 
-.form__check-text > a {
-  text-decoration-line: underline;
-  color: var(--color-btn-link);
-  transition: color var(--time-hover) var(--cubic);
-}
+// .form__check-text > a {
+//   text-decoration-line: underline;
+//   color: var(--color-btn-link);
+//   transition: color var(--time-hover) var(--cubic);
+// }
 
 .btn-send {
   width: 200px;

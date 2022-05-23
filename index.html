@@ -23,11 +23,12 @@
 
   <body>
     <!--шапка сторінки-->
-    <!-- <header class="header">
-      <div class="conteiner">
+    <header class="header ">
+      <div class="conteiner conteiner--menu">
         <a href="./index.html" class="logo link"
           >Web<span class="logo header__logo">Studio</span></a>
-        <nav class="navigation">
+        <div class="menu-mobile">
+          <nav class="navigation">
           <ul class="cite-menu list">
             <li class="cite-menu__item">
               <a href="./index.html" class="cite-menu__link link current">Студия</a>
@@ -45,17 +46,16 @@
             <svg width="16" height="12" class="connect__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-            info@example.com</a
-          >
+            info@example.com</a>
           <a href="tel:+380991111111" class="connect__tel link">
             <svg width="10" height="16" class="connect__icon">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            +38 099 111 11 11</a
-          >
+            +38 099 111 11 11</a>
+        </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <!--основна частина-->
     <main>
       <!-- <section class="hero">
@@ -457,7 +457,7 @@
       </div>
     </footer> -->
 <!-- modal -->
-    <div class="backdrop  " data-modal>
+    <!-- <div class="backdrop is-hidden " data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn__svg" width="18" height="18">
@@ -527,9 +527,45 @@
   </div>
 
 <button type="submit" class="btn-send btn">Отправить</button>
-</form>
+</form> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="16" class="menu-toggle__svg">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="mobile-menu__link link">Студия</a></li>
+        <li><a href="" class="mobile-menu__link link">Портфолио</a></li>
+        <li><a href="" class="mobile-menu__link link">Контакты</a></li>
+      </ul>
+      <div class="connect">
+          <a href="mailto:info@example.com" class="connect__email link">
+            <svg width="16" height="12" class="connect__icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@example.com</a>
+          <a href="tel:+380991111111" class="connect__tel link">
+            <svg width="10" height="16" class="connect__icon">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 099 111 11 11</a>
       </div>
+      <ul class="mobile-menu-soc">
+        <li class="mobile-menu-soc__item"><a href="" class="mobile-menu-soc__link link">Instagram</a></li>
+        <li class="mobile-menu-soc__item"><a href="" class="mobile-menu-soc__link link">Twitter</a></li>
+        <li class="mobile-menu-soc__item"><a href="" class="mobile-menu-soc__link link">Facebook</a></li>
+        <li class="mobile-menu-soc__item"><a href="" class="mobile-menu-soc__link link">LinkedIn</a></li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

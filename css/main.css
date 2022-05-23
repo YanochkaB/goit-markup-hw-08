@@ -99,6 +99,16 @@ img {
   align-items: center;
 }
 
+.menu-mobile {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
 .cite-menu {
   display: flex;
   padding-left: 93px;
@@ -128,7 +138,6 @@ img {
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-title);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -138,9 +147,17 @@ img {
   color: var(--color-btn-link);
 }
 
-.connect {
-  margin-left: auto;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .connect {
+    display: grid;
+    justify-items: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .connect__email {
@@ -377,6 +394,11 @@ img {
   .person-card__item {
     width: calc(50% - 30px);
     margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person-card__item {
+    width: calc(25% - 30px);
   }
 }
 
@@ -818,12 +840,17 @@ img {
 
 .modal__title {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-title);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -882,7 +909,7 @@ img {
 
 .form__check-text {
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
@@ -908,11 +935,16 @@ img {
 .form__check:hover + .form__check-text::before, .form__check:focus + .form__check-text::before {
   border: 2px solid var(--color-btn-link);
 }
-
 .form__check-text > a {
   text-decoration-line: underline;
   color: var(--color-btn-link);
   transition: color var(--time-hover) var(--cubic);
+}
+@media screen and (min-width: 1200px) {
+  .form__check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .btn-send {
@@ -929,4 +961,49 @@ img {
 }
 .btn-send:hover, .btn-send:focus {
   background: #188CE8;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 15px 48px 40px;
+  background: var(--color-accent);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu__link {
+  font-size: 40px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
+}
+
+.mobile-menu-soc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-soc__link {
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-btn-link);
 }/*# sourceMappingURL=main.css.map */
