@@ -11,6 +11,7 @@
 .menu-mobile {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   @media (max-width: 767px) {
     display: none;
   }
@@ -18,7 +19,12 @@
 
 .cite-menu {
   display: flex;
+  @include mobile {
+  padding-left: 88px;
+  }
+  @include desktop {
   padding-left: 93px;
+  }
 }
 
 .cite-menu__item:not(:last-child) {
@@ -56,6 +62,7 @@
   @include tablet {
   display: grid;
   justify-items: start;
+  margin-left: 0;
   }
   @include desktop {
     display: flex;
@@ -63,8 +70,10 @@
   }
 }
 
+@include desktop {
 .connect__email {
   margin-right: 50px;
+}
 }
 
 .connect__icon {

@@ -102,6 +102,7 @@ img {
 .menu-mobile {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .menu-mobile {
@@ -111,7 +112,16 @@ img {
 
 .cite-menu {
   display: flex;
-  padding-left: 93px;
+}
+@media screen and (min-width: 480px) {
+  .cite-menu {
+    padding-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cite-menu {
+    padding-left: 93px;
+  }
 }
 
 .cite-menu__item:not(:last-child) {
@@ -151,6 +161,7 @@ img {
   .connect {
     display: grid;
     justify-items: start;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -160,10 +171,11 @@ img {
   }
 }
 
-.connect__email {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .connect__email {
+    margin-right: 50px;
+  }
 }
-
 .connect__icon {
   margin-right: 10px;
 }
@@ -213,7 +225,8 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0% auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .conteiner {
