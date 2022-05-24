@@ -1,6 +1,9 @@
 .project {
+  @include tablet {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+}
 }
 
 .menu__project {
@@ -8,10 +11,7 @@
   margin-top: calc(-1 * var(--indent-cards));
 }
 
-.project > .project__item {
-  flex-basis: calc(100%/3 - var(--indent-cards));
-  margin-left: var(--indent-cards);
-  margin-top: var(--indent-cards);
+.project__item {
   transition: box-shadow var(--time-hover) var(--cubic);
   &:hover,
   &:focus {
@@ -20,7 +20,32 @@
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (max-width: 767px) {
+  margin: 30px;
+  }
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: calc(100%/2 - 30px);
+    margin: 15px;
+  }
+
+  @include desktop {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
 }
+
+@include tablet {
+  .project__btn { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  }
 
 .project__wrap {
   position: relative;
@@ -48,10 +73,15 @@
 .project__desc {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
+  @include tablet {
+    flex-grow: 1;
+  }
 }
 
 .project__title {
   margin-bottom: 4px;
+  @include font(18px, 2, 700, 0.06em);
+  color: var(--color-title);
 }
 
 .project__text {

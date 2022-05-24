@@ -23,13 +23,19 @@
   color: #fff;
 }
 
-.mobile-menu {
-
+.mobile-menu__open {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    // transition: fill var(--time-hover) var(--cubic);
 }
 
 .mobile-menu__link {
-@include font (40px, 1.17, 500, 0.02em);
-color: var(--color-title);
+    @include font (40px, 1.17, 500, 0.02em);
+    color: var(--color-title);
 }
 
 .mobile-menu-soc {
@@ -40,4 +46,8 @@ flex-wrap: wrap;
 .mobile-menu-soc__link {
     @include font (18px, 1.22, 500, 0.02em);
     color: var(--color-btn-link);
+}
+
+.mobile-menu__icon {
+    fill: #ffffff;
 }

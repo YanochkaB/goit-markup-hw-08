@@ -1,9 +1,9 @@
 .menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  @include desktop {
   padding-top: 94px;
   padding-bottom: 94px;
-  .project__title {
-    @include font(18px, 2, 700, 0.06em);
-    color: var(--color-title);
   }
 }
 
@@ -36,10 +36,20 @@
 }
 
 .menu__list {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
   @include flex($df:flex, $jc:center, $ai:null);
   margin-bottom: 50px;
+  }
 }
 
 .menu__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
