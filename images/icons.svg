@@ -83,8 +83,6 @@
 <symbol id="icon-close_menu" viewBox="0 0 32 32">
 <path d="M31.439 3.166l-3.166-3.166-12.554 12.552-12.552-12.552-3.166 3.166 12.552 12.552-12.552 12.554 3.166 3.166 12.552-12.554 12.554 12.554 3.166-3.166-12.554-12.554 12.554-12.552z"></path>
 </symbol>
-
-
 <symbol id="icon-menu1" viewBox="0 0 48 32">
 <path d="M0 0h48v32h-48v-32z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M-866-44h960v10914h-960v-10914z"></path>

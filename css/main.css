@@ -1063,13 +1063,22 @@ img {
 .mobile-menu {
   display: inline-block;
   flex-grow: 1;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  color: var(--color-title);
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__link {
-  color: var(--color-title);
+.mobile-menu--current {
+  color: var(--color-btn-link);
 }
 
 .mobile-menu-soc {
@@ -1083,8 +1092,4 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--color-btn-link);
-}
-
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
