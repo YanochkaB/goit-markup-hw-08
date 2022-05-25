@@ -6,30 +6,44 @@
 }
 
 .footer-wrap {
-  display: flex;
-  align-items: baseline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .cont-footer {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
+.footer-adres {
+  // display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+    margin-bottom: 60px;
+}
 
 .address {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 20px;
 }
 
 .address__text {
   @include font(14px, 1.71, null, 0.03em);
   color: var(--color-accent);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   transition: color var(--time-hover) var(--cubic);
   &:hover,
   &:focus {
     color: var(--color-btn-link);
+  }
+  @include desktop {
+    margin-bottom: 9px;
   }
 }
 
@@ -49,7 +63,10 @@
 }
 
 .adress__join {
-  margin-left: 70px;
+    //   display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  // margin-left: 70px;
 }
 
 .join__title {
@@ -57,11 +74,12 @@
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 20px;
-  text-align: left;
+  // text-align: left;
 }
 
 .soc-list {
 @include flex($df:flex, $jc:center, $ai:null);
+margin-bottom: 60px;
 }
 
 .soc-list__item:not(:last-child) {
@@ -84,10 +102,13 @@
 }
 
 .adress__send {
-  margin-left: 93px;
+  // margin-left: 93px;
+  
 }
 
 .send__title {
+  display: flex;
+  justify-content: center;
   @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: var(--color-accent);
@@ -95,7 +116,10 @@
 }
 
 .send__field {
-@include flex($df:flex, $jc:flex-start, $ai:null);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+// @include flex($df:flex, $jc:flex-start, $ai:null);
 }
 
 .send__user {
@@ -103,14 +127,23 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: transparent;
-  width: 358px;
+  width: calc(100vw - 30px);
   height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   @include font(16px, 1.25, null, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   &::placeholder {
   @include font(16px, 1.25, null, 0.03em);
   color: rgba(255, 255, 255, 0.6);
+}
+
+@include mobile {
+  width: 450px;
+}
+
+@include desktop {
+  width: 358px;
 }
 }
 
@@ -119,7 +152,12 @@
   width: 200px;
   height: 50px;
   padding: 10px;
-  margin-left: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  // margin-left: 12px;
   background: var(--color-btn-link);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

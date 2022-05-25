@@ -8,6 +8,10 @@
   background: var(--color-accent);
   z-index: 999;
 
+    display: flex;
+    align-items: center;
+
+
   transform: translateX(100%);
   transition: transform var(--time-hover) var(--cubic);
 }
@@ -29,6 +33,7 @@
     background-color: rgba(0,0,0,0);
     width: 40px;
     height: 40px;
+    background: transparent;
 }
 
 .mobile-menu__open {
@@ -38,8 +43,15 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
-    // transition: fill var(--time-hover) var(--cubic);
-}
+    width: 40px;
+    height: 40px;
+    &:hover,
+    &:focus {
+        fill: var(--color-btn-link);
+    }
+    transition: fill var(--time-hover) var(--cubic);
+} 
+
 
 .mobile-menu {
     display: inline-block;
