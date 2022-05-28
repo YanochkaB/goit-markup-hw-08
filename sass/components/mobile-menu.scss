@@ -10,9 +10,9 @@
 
     display: flex;
     align-items: center;
+    flex-direction: column;
 
-
-  transform: translateX(100%);
+  transform: translateX(101%);
   transition: transform var(--time-hover) var(--cubic);
 }
 
@@ -37,6 +37,8 @@
 }
 
 .mobile-menu__open {
+    display: none;
+
     border: none;
     background-color: rgba(0,0,0,0);
     padding: 0;

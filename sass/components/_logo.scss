@@ -3,6 +3,10 @@
   font-style: normal;
   @include font(26px, 1.19, 700, 0.03em);
   color: var(--color-btn-link);
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px ) {
+    @include font(24px, 1.16, 700, 0.03em);
+  }
 }
 
 .header__logo {

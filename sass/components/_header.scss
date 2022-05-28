@@ -11,7 +11,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -30,6 +30,19 @@
   margin-right: 50px;
 }
 
+.cite-menu__link {
+  @include font(14px, 1.14, 500, 0.02em);
+  color: var(--color-title);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--time-hover) var(--cubic);
+  &:focus,
+  &:hover {
+    color: var(--color-btn-link);
+  }
+}
+
 .current {
   position: relative;
   color: var(--color-btn-link);
@@ -45,27 +58,14 @@
   }
 }
 
-.cite-menu__link {
-  @include font(14px, 1.14, 500, 0.02em);
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--time-hover) var(--cubic);
-  &:focus,
-  &:hover {
-    color: var(--color-btn-link);
-  }
-}
-
 .connect {
   @include tablet {
   display: grid;
   justify-items: start;
-  margin-left: 0;
+  align-content: space-evenly;
   }
   @include desktop {
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -90,5 +90,9 @@
   &:hover {
     color: var(--color-btn-link);
     fill: var(--color-btn-link);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    @include font(12px, 1.16, 500, 0.02em);
   }
 }

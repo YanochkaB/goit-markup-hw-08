@@ -104,7 +104,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu-mobile {
     display: none;
   }
@@ -128,6 +128,21 @@ img {
   margin-right: 50px;
 }
 
+.cite-menu__link {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--time-hover) var(--cubic);
+}
+.cite-menu__link:focus, .cite-menu__link:hover {
+  color: var(--color-btn-link);
+}
+
 .current {
   position: relative;
   color: var(--color-btn-link);
@@ -143,31 +158,16 @@ img {
   border-radius: 2px;
 }
 
-.cite-menu__link {
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--time-hover) var(--cubic);
-}
-.cite-menu__link:focus, .cite-menu__link:hover {
-  color: var(--color-btn-link);
-}
-
 @media screen and (min-width: 768px) {
   .connect {
     display: grid;
     justify-items: start;
-    margin-left: 0;
+    align-content: space-evenly;
   }
 }
 @media screen and (min-width: 1200px) {
   .connect {
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -198,6 +198,15 @@ img {
   color: var(--color-btn-link);
   fill: var(--color-btn-link);
 }
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .connect__tel,
+.connect__email {
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -207,6 +216,14 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--color-btn-link);
+}
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
 }
 
 .header__logo {
@@ -253,8 +270,8 @@ img {
 }
 
 .hero__title {
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-align: center;
@@ -263,6 +280,14 @@ img {
   max-width: 700px;
   margin: 0% auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__btn {
@@ -1157,7 +1182,7 @@ img {
   z-index: 999;
   display: flex;
   align-items: center;
-  transform: translateX(100%);
+  transform: translateX(101%);
   transition: transform var(--time-hover) var(--cubic);
 }
 
