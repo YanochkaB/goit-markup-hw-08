@@ -330,6 +330,7 @@ img {
 
 .content__item {
   width: 100%;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .content__item {
@@ -1208,7 +1209,6 @@ img {
 }
 
 .mobile-menu__open {
-  display: none;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
@@ -1221,6 +1221,11 @@ img {
 }
 .mobile-menu__open:hover, .mobile-menu__open:focus {
   fill: var(--color-btn-link);
+}
+@media screen and (max-width: 767.98px) {
+  .mobile-menu__open {
+    display: none;
+  }
 }
 
 .mobile-menu {

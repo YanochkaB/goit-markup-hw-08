@@ -51,7 +51,7 @@
     }
     transition: fill var(--time-hover) var(--cubic);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767.98px) {
         display: none;
     }
 } 
@@ -76,6 +76,11 @@
 
 .mobile-menu--current {
     color: var(--color-btn-link);
+}
+
+.mobile-menu__connect {
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-menu__tel {
