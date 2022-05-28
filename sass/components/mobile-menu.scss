@@ -9,7 +9,7 @@
   z-index: 999;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
   transform: translateX(101%);
@@ -50,10 +50,6 @@
         fill: var(--color-btn-link);
     }
     transition: fill var(--time-hover) var(--cubic);
-
-    @media screen and (max-width: 767.98px) {
-        display: none;
-    }
 } 
 
 
@@ -89,6 +85,8 @@ font-size: 34px;
 line-height: 1.17;
 letter-spacing: 0.02em;
 color: var(--color-btn-link);
+
+margin-bottom: 32px;
 }
 
 .mobile-menu__email {
@@ -97,6 +95,8 @@ font-size: 24px;
 line-height: 1.16;
 letter-spacing: 0.02em;
 color: #757575;
+
+margin-bottom: 64px;
 }
 
 .mobile-menu-soc {
@@ -104,7 +104,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.mobile-menu-soc__item:not(:last-child)::after {
+.mobile-menu-soc__item:not(:last-child) {
     border-right: 1px solid rgba(33,33,33,.2);
     padding-right: 10px;
     margin-right: 10px;
