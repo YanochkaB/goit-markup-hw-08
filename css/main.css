@@ -14,7 +14,6 @@ body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-style: normal;
   color: #757575;
-  overflow: hidden;
 }
 
 .visually-hidden {
@@ -549,9 +548,35 @@ img {
   flex-direction: column;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
+.cont-footer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .cont-footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
 
 .footer-adres {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-adres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .address {
@@ -559,6 +584,11 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    align-items: flex-start;
+  }
 }
 
 .address__text {
@@ -594,6 +624,20 @@ img {
 .address__email:focus,
 .address__email:hover {
   color: var(--color-btn-link);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .adress__join {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adress__join {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .join__title {
@@ -632,6 +676,12 @@ img {
   background-color: var(--color-btn-link);
 }
 
+@media screen and (min-width: 1200px) {
+  .adress__send {
+    margin-left: 93px;
+  }
+}
+
 .send__title {
   display: flex;
   justify-content: center;
@@ -642,6 +692,20 @@ img {
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .send__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send__field {
+    display: flex;
+  }
 }
 
 .send__user {
@@ -688,6 +752,11 @@ img {
   border-radius: 4px;
   justify-content: space-evenly;
   fill: var(--color-accent);
+}
+@media screen and (min-width: 1200px) {
+  .send__btn {
+    margin-left: 12px;
+  }
 }
 
 .menu {
@@ -815,7 +884,7 @@ img {
   padding: 63px 24px;
   color: var(--color-accent);
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--time-hover) var(--cubic);
   overflow: auto;
 }
