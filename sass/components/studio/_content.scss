@@ -1,17 +1,35 @@
 .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+  @include desktop {
   padding-top: 94px;
   padding-bottom: 93px;
+  }
 }
 
 .content__list {
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @include desktop {
   display: flex;
+  }
 }
 
 .content__item {
+width: 100%;
+  
+  @include tablet {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @include desktop {
   flex-direction: column;
   max-width: 270px;
-  &:not(:last-child){
-    margin-right: var(--indent-cards);
   }
 }
 
@@ -28,8 +46,16 @@
   text-transform: uppercase;
   color: var(--color-title);
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
 
 .content__text {
   @include font(14px, 1.71, null, 0.03em);
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
