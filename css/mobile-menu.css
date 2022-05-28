@@ -35,7 +35,6 @@
 }
 
 .mobile-menu__open {
-  display: none;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
@@ -48,6 +47,11 @@
 }
 .mobile-menu__open:hover, .mobile-menu__open:focus {
   fill: var(--color-btn-link);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__open {
+    display: none;
+  }
 }
 
 .mobile-menu {

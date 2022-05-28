@@ -1182,6 +1182,7 @@ img {
   z-index: 999;
   display: flex;
   align-items: center;
+  flex-direction: column;
   transform: translateX(101%);
   transition: transform var(--time-hover) var(--cubic);
 }
@@ -1207,6 +1208,7 @@ img {
 }
 
 .mobile-menu__open {
+  display: none;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;

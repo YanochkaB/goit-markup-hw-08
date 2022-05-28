@@ -37,8 +37,6 @@
 }
 
 .mobile-menu__open {
-    display: none;
-
     border: none;
     background-color: rgba(0,0,0,0);
     padding: 0;
@@ -52,6 +50,10 @@
         fill: var(--color-btn-link);
     }
     transition: fill var(--time-hover) var(--cubic);
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
 } 
 
 
