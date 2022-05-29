@@ -9,7 +9,7 @@
 
 .cite-menu {
   display: flex;
-  @include mobile {
+  @include tablet {
   padding-left: 88px;
   }
   @include desktop {
@@ -50,11 +50,16 @@
 }
 
 .connect {
+  display: flex;
   margin-left: auto;
+  display: none;
   @include tablet {
-  display: grid;
-  justify-items: start;
-  align-content: space-evenly;
+    display: contents;
+    display: flex;
+    flex-direction: column;
+  // display: grid;
+  // justify-items: start;
+  // align-content: space-evenly;
   }
   @include desktop {
     display: flex;
