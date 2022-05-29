@@ -147,6 +147,9 @@ img {
   border-radius: 2px;
 }
 
+.connect {
+  margin-left: auto;
+}
 @media screen and (min-width: 768px) {
   .connect {
     display: grid;
@@ -1211,7 +1214,7 @@ img {
 .mobile-menu__open:hover, .mobile-menu__open:focus {
   fill: var(--color-btn-link);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .mobile-menu__open {
     display: none;
   }
