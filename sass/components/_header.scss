@@ -8,8 +8,10 @@
 }
 
 .cite-menu {
-  display: flex;
+  display: none;
+  // display: flex;
   @include tablet {
+    display: flex;
   padding-left: 88px;
   }
   @include desktop {
@@ -57,12 +59,11 @@
     display: contents;
     display: flex;
     flex-direction: column;
-  // display: grid;
-  // justify-items: start;
-  // align-content: space-evenly;
+    align-items: start;
   }
   @include desktop {
     display: flex;
+    flex-direction: row;
   }
 }
 
