@@ -36,12 +36,12 @@
 }
 
 .menu__list {
-  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   
   @include tablet {
     margin-bottom: 30px;
+    justify-content: center;
   }
   @include desktop {
   @include flex($df:flex, $jc:center, $ai:null);

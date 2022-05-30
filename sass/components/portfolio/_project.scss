@@ -8,7 +8,10 @@
 
 .menu__project {
   margin-left: calc(-1 * var(--indent-cards));
-  margin-top: calc(-1 * var(--indent-cards));
+  // margin-top: calc(-1 * var(--indent-cards));
+  @media screen and (max-width: 768.98px) {
+  margin-bottom: -30px;
+  }
 }
 
 .project__item {

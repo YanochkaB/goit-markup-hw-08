@@ -40,6 +40,7 @@
       display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
     }
 }
 
@@ -106,6 +107,9 @@
 .soc-list {
 @include flex($df:flex, $jc:center, $ai:null);
 margin-bottom: 60px;
+@include desktop {
+  margin-bottom: 0;
+}
 }
 
 .soc-list__item:not(:last-child) {
@@ -178,6 +182,7 @@ margin-bottom: 60px;
 
 @include desktop {
   width: 358px;
+  margin-bottom: 0;
 }
 }
 

@@ -9,7 +9,6 @@
 }
 
 .content__list {
-
   @include mobile {
     display: flex;
     flex-wrap: wrap;
@@ -55,8 +54,4 @@ margin-bottom: 30px;
 
 .content__text {
   @include font(14px, 1.71, null, 0.03em);
-
-  @media screen and (max-width: 767.98px) {
-    text-align: center;
-  }
 }
