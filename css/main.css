@@ -920,11 +920,9 @@ img {
   }
 }
 
-.menu__project {
-  margin-left: calc(-1 * var(--indent-cards));
-}
-@media screen and (max-width: 768.98px) {
+@media screen and (max-width: 767.98px) {
   .menu__project {
+    margin-left: calc(-1 * var(--indent-cards));
     margin-bottom: -30px;
   }
 }
